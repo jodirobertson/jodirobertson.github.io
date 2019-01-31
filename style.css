@@ -1,0 +1,59 @@
+.topNavBar {
+    overflow: hidden;
+    text-align: center;
+}
+
+.elementsNavBar {
+    display: inline-block;
+    margin: 7% 2% 4% 2%;
+    text-align: center;
+    border-radius: 50%;
+    font-family: Courier;
+    width: 100px;
+    height: 100px;
+    line-height: 80px;
+    padding: 4%;
+}
+
+h1 {
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#nav0:hover,
+#nav1:hover,
+#nav2:hover, 
+#nav3:hover {
+    -webkit-transform: scale(1.2);
+}
+
+#nav0 {
+    background: #ffdbd6;
+}
+
+#nav1 {
+    background: #fffcd6;
+}
+
+#nav2 {
+    background: #d6ffdc;
+}
+
+#nav3 {
+    background: #d6eeff;
+}
+
+.elementsNavBar a {
+    text-decoration: none;
+}
+
+p {
+    font-family: Tahoma;
+    text-align: center;
+    margin: 2%;
+}
+
+.paragraph {
+    margin: 6% 30% 10% 30%;
+}
