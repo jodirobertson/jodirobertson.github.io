@@ -21,6 +21,13 @@ h1 {
     font-size: 20px;
 }
 
+h2 {
+    color: black;
+    font-size: 20px;
+    font-family: Courier New;
+    text-align: center;
+}
+
 #nav0:hover,
 #nav1:hover,
 #nav2:hover, 
@@ -56,4 +63,15 @@ p {
 
 .paragraph {
     margin: 6% 30% 10% 30%;
+}
+
+#hacks p {
+    margin-bottom: 10%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
