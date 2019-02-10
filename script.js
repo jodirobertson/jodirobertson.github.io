@@ -15,23 +15,13 @@ function initMap() {
     var colombia = {lat: 4.7110, lng: -74.0721};
     var guatemala = {lat: 14.6907, lng: -91.2025};
 
+    var arrayPosn = [nicaragua, montezuma, zuni, eastVassalboro, hunterMountain, seattle, awa, missouri, nola, bahamas, nahant, israel, palestine, colombia, guatemala];
+    
     // The map
     var map = new google.maps.Map(
         document.getElementById('map'), {zoom: 2, center: seattle});
     // The markers
-    var marker0 = new google.maps.Marker({position: nicaragua, map: map});
-    var marker1 = new google.maps.Marker({position: montezuma, map: map});
-    var marker2 = new google.maps.Marker({position: zuni, map: map});
-    var marker3 = new google.maps.Marker({position: eastVassalboro, map: map});
-    var marker4 = new google.maps.Marker({position: hunterMountain, map: map});
-    var marker5 = new google.maps.Marker({position: seattle, map: map});
-    var marker6 = new google.maps.Marker({position: awa, map: map});
-    var marker7 = new google.maps.Marker({position: missouri, map: map});
-    var marker8 = new google.maps.Marker({position: nola, map: map});
-    var marker9 = new google.maps.Marker({position: bahamas, map: map});
-    var marker10 = new google.maps.Marker({position: nahant, map: map});
-    var marker11 = new google.maps.Marker({position: israel, map: map});
-    var marker12 = new google.maps.Marker({position: palestine, map: map});
-    var marker13 = new google.maps.Marker({position: colombia, map: map});
-    var marker14 = new google.maps.Marker({position: guatemala, map: map});
+    arrayPosn.forEach(function(posn) {
+        var marker = new google.maps.Marker({position: posn, map: map});
+    });
 }
