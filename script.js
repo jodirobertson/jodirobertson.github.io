@@ -1,4 +1,4 @@
-function initMap() {
+/* function initMap() {
     var nicaragua = {lat: 12.1150, lng: -86.2362};
     var montezuma = {lat: 35.6522, lng: -105.2766};
     var zuni = {lat: 35.0695, lng: -108.8484};
@@ -25,3 +25,19 @@ function initMap() {
         var marker = new google.maps.Marker({position: posn, map: map});
     });
 }
+*/
+
+
+var i = 0;
+var txt = 'robertson.j@husky.neu.edu'; /* The text */
+var speed = 60; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById('email').innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.onload = typeWriter;

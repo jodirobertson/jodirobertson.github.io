@@ -1,72 +1,126 @@
-.topNavBar {
+body {
+    background-color: #0174b2;
+    margin: 0;
+}
+
+.upperBar {
     overflow: hidden;
-    text-align: center;
+    background-color: white;
+    font-family: Verdana;
+    color: #0174b2;
+}
+
+.topLogo h1 {
+    float: left;
+    position: relative;
+    text-decoration: none;
+    color: #0174b2;
+    padding: 2% 2% 2% 3%;
 }
 
 .elementsNavBar {
+    color: #0174b2;
+    padding: 2%;
+    font-size: 1em;
     display: inline-block;
-    margin: 7% 2% 4% 2%;
-    text-align: center;
-    border-radius: 50%;
-    font-family: Courier;
-    width: 100px;
-    height: 100px;
-    line-height: 80px;
-    padding: 4%;
-}
-
-h1 {
-    color: black;
-    font-weight: normal;
-    font-size: 20px;
-}
-
-h2 {
-    color: black;
-    font-size: 20px;
-    font-family: Courier New;
-    text-align: center;
+    float: right;
 }
 
 #nav0:hover,
-#nav1:hover,
-#nav2:hover, 
-#nav3:hover {
-    -webkit-transform: scale(1.2);
-}
-
-#nav0 {
-    background: #dcd3fd;
-}
-
-#nav1 {
-    background: #d6eeff;
-}
-
-#nav2 {
-    background: #d6ffdc;
-}
-
-#nav3 {
-    background: #fffcd6;
+#nav1:hover {
+    -webkit-transform: scale(1.1);
 }
 
 .elementsNavBar a {
     text-decoration: none;
 }
 
-p {
-    font-family: Tahoma;
+.paragraph h1 {
+    font-family: Verdana;
+    font-size: 5em;
+    color: white;
+    margin: 4% 2% 4% 3%;
+    
+}
+
+.paragraph p {
+    font-family: Verdana;
+    font-size: 2em;
+    text-align: left;
+    color: white;
+    margin: 2% 2% 2% 3%;
+}
+
+/* bounceIn animation code taken from: https://thoughtbot.com/blog/css-animation-for-beginners */
+
+.bounceHello h1 {
+    animation: bounceIn 1s;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.appear1 p {
+    -webkit-animation: 1s ease-out 0.5s normal forwards 1 fadein; opacity: 0;
+}
+
+.appear2 p{
+  -webkit-animation: 1.5s ease-out 1s normal forwards 1 fadein; opacity: 0;
+}
+
+.appear3 p{
+  -webkit-animation: 1.5s ease-out 1.5s normal forwards 1 fadein; opacity: 0;
+}
+
+@keyframes fadein {
+    0% { opacity:0; }
+    75% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.appear2 @-webkit-keyframes fadein{
+    0% { opacity:0; }
+    75% { opacity:0; }
+    100% { opacity:1; }
+ }
+
+.appear3 @-webkit-keyframes fadein{
+    0% { opacity:0; }
+    75% { opacity:0; }
+    100% { opacity:1; }
+ }
+
+#contact p {
     text-align: center;
-    margin: 2%;
 }
 
-.paragraph {
-    margin: 5% 30% 5% 30%;
+#firstLine {
+    margin-top: 15%;
 }
 
-#hacks p {
-    margin-bottom: 10%;
+#links p {
+    margin-top: 12%;
+}
+
+#links p a {
+    text-decoration: none;
+    color: white;
+}
+
+#projects p {
+    margin: 15% 14% 0 14%;
+    text-align: center;
 }
 
 img {
