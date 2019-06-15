@@ -118,9 +118,28 @@ body {
     color: white;
 }
 
-#projects p {
-    margin: 15% 14% 0 14%;
+h2 {
+    margin-top: 10%;
     text-align: center;
+    font-size: 2em;
+    font-family: Verdana;
+    color: white;
+}
+
+.projects p {
+    margin: 2% 10% 2% 10%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#footnote {
+    font-size: 1.2em;
+    margin-bottom: 4%;
+}
+
+#footnote a {
+    text-decoration: none;
+    color: white;
 }
 
 img {
@@ -128,12 +147,4 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-}
-
-#map {
-    height: 400px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10%;
 }
